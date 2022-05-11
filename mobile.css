@@ -1,0 +1,45 @@
+html, body {margin:0;padding:0;}
+body {font-family:"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;background-color:#F6F6F6;}
+
+input {-webkit-appearance:none;/*For iOS*/}
+input, textarea, select {margin:0;padding:0 0.25em;font:inherit;border:0 none transparent;outline:0 none transparent;box-shadow:0 0 0 1px #CCC;box-sizing:border-box;}
+select option {margin:0 0.25em;padding:0;font:inherit;box-sizing:border-box;}
+
+table {font:inherit;}
+table th {font:inherit;font-weight:normal;}
+table td {font:inherit;}
+
+::-webkit-input-placeholder {color:#CCC;vertical-align:middle;/* WebKit browsers */}
+:-moz-placeholder {color:#CCC;vertical-align:middle;/* Mozilla Firefox 4 to 18 */}
+::-moz-placeholder {color:#CCC;vertical-align:middle;/* Mozilla Firefox 19+ */}
+:-ms-input-placeholder {color:#CCC;vertical-align:middle;/* Internet Explorer 10+ */}
+
+.left   {text-align:left;}
+.center {text-align:center;}
+.right  {text-align:right;}
+
+.top    {vertical-align:top;}
+.middle {vertical-align:middle;}
+.bottom {vertical-align:bottom;}
+
+.nowrap {white-space:nowrap;}
+
+.tpl {display:none;}
+
+.flex-row {display:-webkit-flex;display:flex;-webkit-flex-direction:row;flex-direction:row;}
+.flex-row > .flex-main {-webkit-flex:1 1 auto;flex:1 1 auto;}
+.flex-row > .flex-side {-webkit-flex:0 0 auto;flex:0 0 auto;}
+.flex-row.flex-spacing .flex-main:not(:first-child), .flex-row.flex-spacing .flex-side:not(:first-child) {margin-left:0.5em;}
+.flex-row.flex-padding {padding-left:0.5em;padding-right:0.5em;}
+
+.flex-column {display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;}
+.flex-column > .flex-main {-webkit-flex:1 1 auto;flex:1 1 auto;}
+.flex-column > .flex-side {-webkit-flex:0 0 auto;flex:0 0 auto;}
+.flex-column > .flex-main.flex-scroll-y {overflow-y:auto;}
+
+.fix-clear:after {content:'\200B';clear:both;height:0;visibility:hidden;display:block;}
+.fix-text {-webkit-text-size-adjust:100%;}
+
+.font-x {font-family: 'MF YanSong (Noncommercial) Regu', 'Microsoft JhengHei', SimHei, serif;}
+
+.layout-mobile {margin:0 auto;width:750px;max-width:750px;min-height:100vh;font-size:24px;background-color:#F6F6F6;box-shadow:0 0 5px 0 #CCC;}
